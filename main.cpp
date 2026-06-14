@@ -1,3 +1,14 @@
-#include <QtQml/qqmlregistration.h>
-#include <QtQmlIntegration/qqmlintegration.h>
-int main() { return 1; }
+#include <QGuiApplication>
+#include <QQmlApplicationEngine>
+
+int main(int argc, char *argv[]) {
+  QGuiApplication app(argc, argv);
+
+  QQmlApplicationEngine engine;
+  QObject::connect(
+      &engine, &QQmlApplicationEngine::objectCreationFailed, &app,
+      []() { QCoreApplication::exit(-1); }, Qt::QueuedConnection);
+  engine.loadFromModule("com.nilbogshideout.kobold", "Main");
+
+  return app.exec();
+}
