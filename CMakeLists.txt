@@ -13,12 +13,15 @@ qt_add_executable(kobold
     main.cpp
 )
 
+qt_policy(SET QTP0001 NEW)
+
 qt_add_qml_module(kobold
-    URI hello
+    URI Kobold
     QML_FILES
         main.qml
     RESOURCES
         img/logo.png
 )
+
 
 target_link_libraries(kobold PRIVATE Qt6::Quick)
