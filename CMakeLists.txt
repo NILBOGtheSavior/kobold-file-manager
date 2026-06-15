@@ -18,11 +18,16 @@ qt_add_executable(kobold
 
 qt_policy(SET QTP0001 NEW)
 
+set_source_files_properties(config/Colors.qml
+    PROPERTIES QT_QML_SINGLETON_TYPE TRUE)
+
 qt_add_qml_module(kobold
     URI com.nilbogshideout.kobold
     QML_FILES
         Main.qml
         ui/LabelButton.qml
+        components/Sidebar.qml
+        config/Colors.qml
     RESOURCES
         img/logo.png
 )
