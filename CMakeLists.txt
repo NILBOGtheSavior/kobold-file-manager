@@ -8,7 +8,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(QT_QML_GENERATE_QMLLS_INI ON)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
-find_package(Qt6 6.5 COMPONENTS Quick REQUIRED)
+find_package(Qt6 6.5 REQUIRED COMPONENTS Quick Core Qml )
 
 qt_standard_project_setup()
 
@@ -22,6 +22,7 @@ qt_add_qml_module(kobold
     URI com.nilbogshideout.kobold
     QML_FILES
         Main.qml
+        ui/LabelButton.qml
     RESOURCES
         img/logo.png
 )

@@ -13,23 +13,9 @@ ApplicationWindow {
         width: 500
         Layout.fillHeight: true
         Repeater {
-            model: 3
-            Button {
-                id: button
-
-                required property var modelData
-                text: "A Special Button"
-                background: Rectangle {
-                    Layout.fillWidth: true
-                    implicitHeight: 40
-                    color: button.down ? "#394260" : "transparent"
-                    border.color: "#26282a"
-                    border.width: 1
-                    radius: 4
-                }
-                onClicked: {
-                    console.log("hello world " + modelData);
-                }
+            model: 6
+            delegate: LabelButton {
+                text: "Hello world!"
             }
         }
     }
