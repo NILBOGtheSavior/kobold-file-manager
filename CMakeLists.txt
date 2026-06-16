@@ -26,7 +26,11 @@ qt_add_qml_module(kobold
     QML_FILES
         Main.qml
         ui/LabelButton.qml
+        ui/NavigationButton.qml
         components/Sidebar.qml
+        components/Toolbar.qml
+        components/Statusbar.qml
+        components/Fileview.qml
         config/Colors.qml
     RESOURCES
         img/logo.png

@@ -16,5 +16,20 @@ ApplicationWindow {
             Layout.fillHeight: true
             implicitWidth: 200
         }
+        ColumnLayout {
+            Layout.fillHeight: true
+            Layout.fillWidth: true
+            Toolbar {
+                Layout.fillWidth: true
+                implicitHeight: 20
+            }
+            Fileview {
+                Layout.fillWidth: true
+                Layout.fillHeight: true
+            }
+            Statusbar {
+                implicitHeight: 20
+            }
+        }
     }
 }
