@@ -24,11 +24,8 @@ RowLayout {
             color: Colors.surface
             anchors.fill: parent
         }
-        contentItem: Text {
+        contentItem: Label {
             text: control.text
-            font.family: "BlexMono Nerd Font"
-            font.pointSize: 12
-            color: Colors.foreground
         }
     }
     NavigationButton {

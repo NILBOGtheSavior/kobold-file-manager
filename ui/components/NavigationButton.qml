@@ -12,11 +12,8 @@ Button {
         selected = !selected;
     }
 
-    contentItem: Text {
+    contentItem: Label {
         text: control.text
-        font.family: "BlexMono Nerd Font"
-        font.pointSize: 12
-        color: Colors.foreground
         horizontalAlignment: Text.AlignHCenter
     }
     background: Rectangle {

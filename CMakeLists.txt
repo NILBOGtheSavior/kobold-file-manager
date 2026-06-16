@@ -25,12 +25,13 @@ qt_add_qml_module(kobold
     URI com.nilbogshideout.kobold
     QML_FILES
         ui/Main.qml
-        ui/modules/LabelButton.qml
-        ui/modules/NavigationButton.qml
-        ui/components/Sidebar.qml
-        ui/components/Toolbar.qml
-        ui/components/Statusbar.qml
-        ui/components/Fileview.qml
+        ui/components/Label.qml
+        ui/components/LabelButton.qml
+        ui/components/NavigationButton.qml
+        ui/modules/Sidebar.qml
+        ui/modules/Toolbar.qml
+        ui/modules/Statusbar.qml
+        ui/modules/Fileview.qml
         ui/config/Colors.qml
     RESOURCES
         img/logo.png
